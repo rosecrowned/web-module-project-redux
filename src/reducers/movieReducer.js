@@ -13,7 +13,7 @@ const reducer = (state, action) => {
                 movies: state.movies.filter(item=>(action.payload !== item.id))
             }
         default:
-            return state;
+            return initialState;
     }
 }
 
